@@ -5,4 +5,9 @@ class MoviesController < ApplicationController
     render json: movies
   end
 
+  def show
+    movies = Movie.all
+    render json: movies
+  end
+
 end
